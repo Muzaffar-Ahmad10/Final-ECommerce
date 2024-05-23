@@ -1,0 +1,38 @@
+{% extends "hello_world/dashboard.html" %}
+{% load static %}
+{% block title %}
+  All Orders
+{% endblock title %}
+{% block content %}
+<h2>All Orders</h2>
+{% if transactions %}
+  <div class="table-responsive">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Transaction ID</th>
+          <th scope="col">Total Bill</th>
+          <th scope="col">Payment Status</th>
+          <th scope="col">Ordered At</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for transaction in transactions %}
+        <tr>
+          <td>{{ transaction.id }}</td>
+          <td>${{ transaction.total_bill }}</td>
+          <td>{{ transaction.payment_status }}</td>
+          <td>{{ transaction.created_at }}</td>
+          <td>
+            <a href="{% url 'view_bill' transaction.id %}" class="btn btn-primary btn-sm">View Bill</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% else %}
+  <p>You have not placed any orders yet.</p>
+{% endif %}
+{% endblock %}
