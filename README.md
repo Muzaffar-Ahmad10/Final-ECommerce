@@ -31,3 +31,14 @@
 - To explore and buy a diverse selection of computer-related products from the online store.
 - To easily reach the main page for making purchases.
 - To get in touch with the ishopPc team for any questions or assistance through the contact page.
+
+### Site Owner Goals
+- Drive sales by offering products for purchase on the ecommerce store
+- Cultivate a dedicated customer following through a user-friendly interface and top-notch merchandise
+- Position ishopPc as a reputable and esteemed name in the digital retail sector
+- Attain financial success and ensure ongoing expansion.
+
+### User Experience
+
+- Those seeking information and resources regarding computer products,
+- Any person interested in buying PC-related products from the app's online store.
