@@ -1,6 +1,6 @@
 # Ishope
 
-![Am I Responsive](media/product_images/responsive.jpeg)
+![Am I Responsive](images/responsive.jpeg)
 
 ## Table of Contents
 
