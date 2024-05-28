@@ -42,3 +42,26 @@
 
 - Those seeking information and resources regarding computer products,
 - Any person interested in buying PC-related products from the app's online store.
+
+### User Requirements and Expectations
+- A user-friendly interface: Users will expect the app to be easy to navigate and use, with clear and concise instructions for purchasing products.
+- Reliability: Users will expect the app to be reliable and function smoothly, without any errors or technical issues.
+- Security: Users will expect their personal and financial information to be secure when using the app, and will expect the app to have appropriate 
+  measures in place to protect their data.
+- Accurate and up-to-date information: Users will expect the app to provide accurate and up-to-date information about the products.
+- Competitive prices: Users will expect the prices for products to be competitive with other options available on the market.
+- Good customer service: Users will expect the app to have good customer service, including responsive and helpful support in the event of any issues or questions.
+
+### Kanban, Epics & User Stories
+- GitHub Kanban was used to track all open user stories
+- Epics were created using the milestones feature
+- Backlog, In Progress, Done headings were used in the kanban
+
+### Design
+Colors
+- Colors are black and white, it looks very prominent.
+
+
+Fonts
+- The font selected was from Google Fonts,
+
