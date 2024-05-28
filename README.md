@@ -2,11 +2,24 @@
 
 ![Am I Responsive](images/responsive.jpeg)
 
-## Table of Contents
+## Table of Contents:
 
- 
-
-
+1. Executive Summary
+2. Marketting
+3. User Goals
+4. Site Owner Goals
+5. User Experience
+6. User Requirements and Expectations
+7. Kanban, Epics & User Stories
+8. Design
+9. Structure
+10. Website pages
+11. Database
+12. Technologies Used
+13. Libraries & Tools
+14. Features
+15. Deployment
+16. 
 
 ### Business Plan
 - Its online shope, We are your one-stop shop for all computer-related products, offering a wide range of products from top brands to meet all your computing needs. 
@@ -57,7 +70,7 @@
 - Epics were created using the milestones feature
 - Backlog, In Progress, Done headings were used in the kanban
 
-### Design
+### Design:
 Colors
 - Colors are black and white, it looks very prominent.
 
@@ -98,7 +111,7 @@ Fonts
  - I constructed my database utilizing PostgreSQL, a renowned open-source object-relational database system recognized for its reliability, 
    robustness, and performance. I opted for PostgreSQL due to its ability to offer a versatile solution for effectively handling and structuring my data.
 
-### Technologies Used
+### Technologies Used:
 #### Languages & Frameworks
 
 - HTML
@@ -107,9 +120,8 @@ Fonts
 - Python
 - Django
 
-### Libraries & Tools
+### Libraries & Tools:
 
-#### Libraries & Tools
 - Am I Responsive
 - Bootstrap v5.2
 - Favicon.io
@@ -122,7 +134,7 @@ Fonts
 - jQuery
 - Postgres
 
-### Features
+### Features:
 
 #### Search Engine Optimisation (SEO)
 - I have used meta tags in the HTML of my web app's pages to optimize them for search engines. The description tag provides a brief summary of the content on the page, while the keywords tag lists relevant keywords to help search engines understand the content of the webpage and its relevance to 
@@ -184,7 +196,7 @@ Fonts
 - Links are used for the Facebook business page and Instagram page.
 - All links open in a new tab to ensure the user is not directed away from the business.
 
-### Deployment
+### Deployment:
 
 #### Heroku
 
