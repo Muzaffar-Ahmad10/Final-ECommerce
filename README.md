@@ -187,4 +187,27 @@ Fonts
 ### Deployment
 
 #### Heroku
-- 
+
+- This application has been deployed from Github using Heroku. Here's how:
+
+1. Create an account at heroku.com
+2. Create an app, give it a name
+3. Under resources search for postgres, and add a Postgres database to the app
+
+#### Heroku Postgres
+
+1. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
+
+2. Create a Procfile with the text: web: gunicorn the_diplomat.wsgi
+3. In the settings.py ensure the connection is to the Heroku postgres database, no indentation if you are not using a seperate test database. I store mine in env.py
+4. Ensure debug is set to false in the settings.py file
+5. Add localhost
+6. Ensure the following environment variables are set in Heroku
+7. Connect the app to GitHub, and enable automatic deploys from main if you wish
+8. Click deploy to deploy your application to Heroku for the first time.
+
+### Fork Repository
+- To fork the repository by following these steps:
+
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
