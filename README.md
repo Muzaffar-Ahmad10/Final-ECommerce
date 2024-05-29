@@ -17,8 +17,9 @@
 11. Database
 12. Technologies Used
 13. Libraries & Tools
-14. Features
-15. Deployment
+14. Validation
+15. Features
+16. Deployment
 
 ### Business Plan:
 - Its online shope, We are your one-stop shop for all computer-related products, offering a wide range of products from top brands to meet all your computing needs. 
