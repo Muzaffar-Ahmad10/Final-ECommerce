@@ -19,9 +19,8 @@
 13. Libraries & Tools
 14. Features
 15. Deployment
-16. 
 
-### Business Plan
+### Business Plan:
 - Its online shope, We are your one-stop shop for all computer-related products, offering a wide range of products from top brands to meet all your computing needs. 
 - At IshopPC, our mission is to provide high-quality computer products at competitive prices, backed by exceptional customer service. We strive to make technology accessible and affordable for everyone.
 
@@ -134,6 +133,78 @@ Fonts
 - jQuery
 - Postgres
 
+
+### Validation:
+
+#### HTML Validation:
+
+- The W3C Markup Validation Service was used to validate the HTML of the website.
+- Only Few Errors are remaining
+
+#### CSS Validation:
+
+- The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
+- Dashboard.css has no errors
+- BootStrape.css has no errors
+
+<details><summary>CSS validation done image</summary>  
+
+![Epics](images/css%20validation%20.jpeg)
+</details>
+
+<details><summary>bootstrape CSS validation done image</summary>  
+
+![Epics](images/bootstrape%20css.jpeg)
+</details>
+
+#### JavaScript Validation:
+ - JSHint javaScript Validation Service was used to validate all javaScript files.
+ - All the code is working properly. 
+
+
+ #### PEP8 Validation:
+ - CI Python Linter was used to check the code for PEP8 requirements.
+ 
+ - Manage.py has no errors
+ <details><summary>manage.py file</summary>  
+
+![Epics](images/manage.py.jpeg)
+</details>
+
+- Admin.py has no errors
+ <details><summary>Admin.py file</summary>  
+
+![Epics](images/Admin.py%20.jpeg)
+</details>
+
+- Urls.py has no errors
+ <details><summary>urls.py file</summary>  
+
+![Epics](images/urls.py%20.jpeg)
+</details>
+
+- Forms.py has no errors
+ <details><summary>Forms.py file</summary>  
+
+![Epics](images/forms.py%20.jpeg)
+</details>
+
+- Decorators.py has no errors
+ <details><summary>Decorators.py file</summary>  
+
+![Epics](images/decorators.py%20.jpeg)
+</details>
+
+#### Lighthouse:
+- Performance, best practices and SEO was tested using Lighthouse.
+
+#### Testing: 
+
+- Manual testing User Stories
+- Automated testing
+
+
+
 ### Features:
 
 #### Search Engine Optimisation (SEO)
@@ -195,6 +266,16 @@ Fonts
 
 - Links are used for the Facebook business page and Instagram page.
 - All links open in a new tab to ensure the user is not directed away from the business.
+### Bugs
+## Bugs
+
+| **Bug** | 
+| ------- | 
+| Web Page search option is not working properly | 
+| Product pictures are not shown when we deploy this webpage on heroku.  | 
+| All the code is working properly, but all the code do not go through from the validators. | 
+
+
 
 ### Deployment:
 
