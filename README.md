@@ -300,8 +300,20 @@ Fonts
 7. Connect the app to GitHub, and enable automatic deploys from main if you wish
 8. Click deploy to deploy your application to Heroku for the first time.
 
-### Fork Repository
+### Fork Repository:
+
 - To fork the repository by following these steps:
 
 1. Go to the GitHub repository
 2. Click on Fork button in upper right hand corner
+
+### Clone Repository:
+
+You can clone the repository by following these steps:
+
+1. Go to the GitHub repository
+2. Locate the Code button above the list of files and click it
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY) 7.Press Enter to create your local clone.
