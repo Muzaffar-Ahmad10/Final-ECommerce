@@ -2,6 +2,7 @@
 
 ![Am I Responsive](images/responsive.jpeg)
 
+[here is the live link ] ()
 ## Table of Contents:
 
 1. Executive Summary
@@ -21,7 +22,7 @@
 15. Features
 16. Deployment
 
-### Business Plan:
+## Business Plan:
 - Its online shope, We are your one-stop shop for all computer-related products, offering a wide range of products from top brands to meet all your computing needs. 
 - At IshopPC, our mission is to provide high-quality computer products at competitive prices, backed by exceptional customer service. We strive to make technology accessible and affordable for everyone.
 
@@ -135,7 +136,7 @@ Fonts
 - Postgres
 
 
-### Validation:
+## Validation:
 
 #### HTML Validation:
 
@@ -206,7 +207,7 @@ Fonts
 
 
 
-### Features:
+## Features:
 
 #### Search Engine Optimisation (SEO)
 - I have used meta tags in the HTML of my web app's pages to optimize them for search engines. The description tag provides a brief summary of the content on the page, while the keywords tag lists relevant keywords to help search engines understand the content of the webpage and its relevance to 
@@ -267,7 +268,7 @@ Fonts
 
 - Links are used for the Facebook business page and Instagram page.
 - All links open in a new tab to ensure the user is not directed away from the business.
-### Bugs
+
 ## Bugs
 
 | **Bug** | 
@@ -278,7 +279,7 @@ Fonts
 
 
 
-### Deployment:
+## Deployment:
 
 #### Heroku
 
@@ -307,6 +308,7 @@ Fonts
 1. Go to the GitHub repository
 2. Click on Fork button in upper right hand corner
 
+
 ### Clone Repository:
 
 You can clone the repository by following these steps:
@@ -318,3 +320,19 @@ You can clone the repository by following these steps:
 5. Change the current working directory to the one where you want the cloned directory
 6. Type git clone and paste the URL from the clipboard () 
 7. Press Enter to create your local clone.
+
+## Credits
+
+### Media
+[Unsplash](https://unsplash.com/)
+
+### Code 
+
+- Thanks for the Code Institute,
+- Code Institute Slack community,
+
+### Special thanks to the following:
+- My Mentor Mo Shami for his excellent guidance and valuable advice  
+- Code Institute Slack Community
+- Code Institute Tutor Support
+- My Friend who support me during my project. 
