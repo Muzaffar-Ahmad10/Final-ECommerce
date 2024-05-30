@@ -331,6 +331,8 @@ You can clone the repository by following these steps:
 - Thanks for the Code Institute,
 - Code Institute Slack community,
 
+## Acknowledgements:
+
 ### Special thanks to the following:
 - My Mentor Mo Shami for his excellent guidance and valuable advice  
 - Code Institute Slack Community
