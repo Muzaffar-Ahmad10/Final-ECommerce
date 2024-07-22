@@ -338,3 +338,5 @@ You can clone the repository by following these steps:
 - Code Institute Slack Community
 - Code Institute Tutor Support
 - My Friend who support me during my project. 
+
+# chacking new gitpod seeting
