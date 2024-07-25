@@ -49,4 +49,7 @@ core.python*
 
 # Cloudinary configuration files
 cloudinary_python.txt
-hello_world/migrations/
+cart/migrations/
+mainapp/migrations/__init__.py
+mainapp/migrations/
+products/migrations/
