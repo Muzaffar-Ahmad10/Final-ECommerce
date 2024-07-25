@@ -1,0 +1,57 @@
+{% extends "mainapp/dashboard.html" %}
+{% load static %}
+{% block title %}
+    Add Product
+{% endblock title %}
+
+{% block content %}
+<div class="container mt-2">
+    <div class="card">
+        <div class="card-header">
+            <h1 class="mt-4">Add Product</h1>
+        </div>
+        <div class="card-body">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group" style="margin-bottom: 20px;">
+                    {{ product_form.non_field_errors }}
+                    {{ product_form.name.label_tag }} {{ product_form.name }}
+                    {{ product_form.description.label_tag }} {{ product_form.description }}
+                </div>
+                <div class="form-row" style="margin-bottom: 20px;">
+                    <div class="form-group col-md-6" style="margin-bottom: 20px;">
+                        {{ product_form.price.label_tag }} {{ product_form.price }}
+                    </div>
+                    <div class="form-group col-md-6" style="margin-bottom: 20px;">
+                        {{ product_form.stock.label_tag }} {{ product_form.stock }}
+                    </div>
+                </div>
+                <h2 class="mt-4">Product Images</h2>
+                <div class="form-group" style="margin-bottom: 20px;">
+                    {{ formset.management_form }}
+                    <div class="row">
+                        {% for form in formset %}
+                            <div class="col-md-4">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        {{ form.non_field_errors }}
+                                        {{ form.image.label_tag }} {{ form.image }}
+                                        {{ form.alt_text.label_tag }} {{ form.alt_text }}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 30px;">
+                    <button type="submit" class="btn btn-primary btn-save" style="font-size: 1.25rem; padding: 10px 20px;">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+    
+    

@@ -1,0 +1,32 @@
+{% extends "mainapp/main.html" %}
+{% block title %}
+    Hot Products
+{% endblock title %}
+{% block content %}
+<div class="text-center mt-4">
+<h2>Hot proudcts of the month</h2>
+</div>
+<div class="container my-5">
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                {% if product.images.all %}
+                <img src="{{ product.images.first.image.url }}" class="card-img-top" alt="{{ product.images.first.alt_text }}">
+                {% else %}
+                <img src="path/to/placeholder/image.jpg" class="card-img-top" alt="No image available">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">{{ product.description }}</p>
+                    <p>Price: ${{ product.price }}</p>
+                    <p>Stock: {{ product.stock }}</p>
+                    <a href="{% url 'single_product' product.slug %}" class="btn btn-secondary">View</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

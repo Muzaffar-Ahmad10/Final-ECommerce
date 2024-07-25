@@ -1,0 +1,40 @@
+{% extends 'mainapp/main.html' %}
+{% load static %}
+
+{% block title %}
+    My Bill
+{% endblock title %}
+    
+{% block content %}
+<div class="d-flex justify-content-center align-items-center flex-column min-vh-100">
+  <h2 class="my-4">View Bill</h2>
+  <div class="card mb-4" style="width: 100%; max-width: 600px;">
+    <div class="card-header">
+      Transaction Details
+    </div>
+    <div class="card-body">
+      <div class="mb-3">
+        <strong>Transaction ID:</strong> {{ transaction.id }}
+      </div>
+      <div class="mb-3">
+        <strong>Total Bill:</strong> ${{ transaction.total_bill }}
+      </div>
+      <div class="mb-3">
+        <strong>Payment Status:</strong> {{ transaction.payment_status }}
+      </div>
+      <div>
+        <strong>Items:</strong>
+        <ul class="list-group mt-2">
+          {% for transaction_product in transaction.transactionproduct_set.all %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              {{ transaction_product.sold_product.product.name }}
+              <span class="badge badge-primary badge-pill">Quantity: {{ transaction_product.sold_product.quantity }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <a href="{% url 'index' %}" class="btn btn-info">Explore more Products</a>
+</div>
+{% endblock %}

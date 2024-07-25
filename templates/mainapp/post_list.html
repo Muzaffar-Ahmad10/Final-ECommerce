@@ -1,0 +1,31 @@
+{% extends "mainapp/main.html" %}
+{% load static %}
+{% block title %}
+    Post List
+{% endblock title %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4">Blog Posts</h1>
+    <div class="row">
+        {% for post in posts %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">By {{ post.author.username }}</h6>
+                        <p class="card-text">{{ post.content|truncatewords:20 }}</p>
+                        <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on {{ post.created_on|date:"F d, Y" }}
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="col-12">
+                <p class="text-center">No posts available.</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content%}

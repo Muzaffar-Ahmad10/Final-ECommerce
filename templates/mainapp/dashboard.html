@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        #sidebar-wrapper {
+            min-height: 100vh;
+            margin-left: -15rem;
+            transition: margin .25s ease-out;
+        }
+
+        #sidebar-wrapper .list-group {
+            width: 15rem;
+        }
+
+        #page-content-wrapper {
+            min-width: 100vw;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            margin-left: 0;
+        }
+
+        .sidebar-heading {
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            #sidebar-wrapper {
+                margin-left: 0;
+            }
+            #page-content-wrapper {
+                min-width: 0;
+                width: 100%;
+            }
+            #wrapper.toggled #sidebar-wrapper {
+                margin-left: -15rem;
+            }
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(8, 8, 8, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        @media (max-width: 767.98px) {
+            .navbar-toggler {
+                position: absolute;
+                right: 10px;
+            }
+        }
+
+        .navbar-brand {
+            margin-left: 1rem;
+        }
+
+        .navbar-nav {
+            flex-direction: row;
+        }
+
+        .nav-item {
+            margin-left: auto;
+        }
+        .alert-wrapper {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1050;
+            min-width: 300px;
+        }
+        .alert {
+            display: none;
+            animation: slide-in 0.5s forwards, fade-out 0.5s 3.5s forwards;
+        }
+        @keyframes slide-in {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fade-out {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading text-white"><h2>IshopPC Dashboard</h2></div>
+        <div class="list-group list-group-flush">
+            <a href="{% url 'add_product' %}" class="list-group-item list-group-item-action bg-dark text-white">Add Product</a>
+            <a href="{% url 'inventory' %}" class="list-group-item list-group-item-action bg-dark text-white">Inventory</a>
+            <a href="{% url 'all_orders' %}" class="list-group-item list-group-item-action bg-dark text-white">All Orders</a>
+            <a href="{% url 'add_posts' %}" class="list-group-item list-group-item-action bg-dark text-white">News & Posts</a>
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <button class="navbar-toggler" type="button" id="menu-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-block d-md-none" href="#">IShopPC</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+        <!-- Display messages -->
+        <div class="alert-wrapper">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+            {% block content %}
+                
+            {% endblock content %}
+        </div>
+        <br>
+        <div style="margin-top: 10%">
+        </div>
+        <div class="text-center bg-dark text-white mt-5" style="position: fixed; bottom: 0; width: 100%;">
+            <footer>
+                <p class="mt-2">IshopPc Admin Panel @ 2024 Updated Version</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- /#page-content-wrapper -->
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+{% block extra_js %}
+    
+{% endblock extra_js %}
+    
+<script>
+    $(document).ready(function() {
+        $('#products-table').DataTable();
+    });
+</script>
+
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    $(document).ready(function() {
+        $(".alert").each(function(index) {
+            var alert = $(this);
+            setTimeout(function() {
+                alert.fadeIn();
+            }, index * 1000); // Delay each alert's display to stagger them
+        });
+    });
+
+</script>
+</body>
+</html>
