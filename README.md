@@ -339,4 +339,4 @@ You can clone the repository by following these steps:
 - Code Institute Tutor Support
 - My Friend who support me during my project. 
 
-changing for the gitpod
+# chacking new gitpod seeting
