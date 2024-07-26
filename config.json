@@ -1,6 +1,7 @@
 {
 	"SECRET_KEY": "django-insecure-l+%m3jn6$-tcj1irf(lp*^d=23n!be#qe+d7ar%ygq2+jxn%64",
 	"DEBUG": false,
-	"allowed_hosts": ["*"],
+	"allowed_hosts": ["https://8000-muzaffarahm-finalecomme-0vbktgr33i6.ws.codeinstitute-ide.net",
+					"http://127.0.0.1:8000/", "http://locahost:8080"],
     "DATABASE": "postgres://magyattd:WEUqPqAASGgEEdzNn6MYi-1xEm3b-gVW@abul.db.elephantsql.com/magyattd"
 }

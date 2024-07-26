@@ -17,6 +17,8 @@ from .forms import PostForm
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
+
+@csrf_exempt
 def index(request):
     products = Product.objects.all()
     product_images = {product.id: ProductImage.objects.filter(product=product).first() for product in products}
@@ -52,7 +54,7 @@ def hot_products(request):
     }
     return render(request, 'mainapp/hot_products.html', context)
 
-
+@csrf_exempt
 def signup_user(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -80,7 +82,7 @@ def signup_user(request):
 
     return render(request, 'mainapp/signup.html')
 
-
+@csrf_exempt
 def login_user(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -171,6 +173,7 @@ def post_detail(request, slug):
 
 
 @superuser_required
+@csrf_exempt
 def add_posts(request):
     if request.method == "POST":
         form = PostForm(request.POST)
@@ -192,9 +195,13 @@ def add_posts(request):
     return render(request, 'mainapp/add_posts.html', context)
 
 @superuser_required
+@csrf_exempt
 def delete_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
     if post.author == request.user:
         messages.success(request, "Post Deleted Successfully")
         post.delete()
     return redirect('add_posts')
+
+def custom_page_not_found_view(request, exception):
+    return render(request, 'mainapp/404.html', status=404)

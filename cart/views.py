@@ -13,6 +13,7 @@ stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 @login_required(login_url="/login/")
+@csrf_exempt
 def add_to_cart(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
 
@@ -32,6 +33,7 @@ def add_to_cart(request, product_id):
 
 
 @login_required(login_url="/login/")
+@csrf_exempt
 def cart(request):
     cart_items = CartItem.objects.filter(user=request.user)
 
@@ -111,6 +113,7 @@ def checkout(request):
 
 
 @login_required(login_url="/login/")
+@csrf_exempt
 def clear_cart(request):
     cart_items = CartItem.objects.filter(user=request.user)
     

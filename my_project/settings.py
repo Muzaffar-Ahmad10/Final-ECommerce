@@ -14,7 +14,7 @@ STRIPE_PUBLISHABLE_KEY = 'pk_test_51PG3XeEFP8WxWAAHk1Ln1cwqnWTdQmGqUAInKu2Xfk4Yb
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']  # Allows all hosts for development purposes
+ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'corsheaders',
     'cart',
     'products',
