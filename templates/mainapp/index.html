@@ -99,7 +99,7 @@
                 <p class="card-text">Description : {{ product.description }}</p>
                 <p class="card-text">Product Price : {{ product.price }}$</p>
                 <p class="card-text">Product in-stock : {{ product.stock }}</p>
-                <a href="{% url 'single_product' product.id %}" class="btn btn-secondary">View</a>
+                <a href="{% url 'single_product' product.slug %}" class="btn btn-secondary">View</a>
                 <!-- ^^^ Added View button with URL to single_product view ^^^ -->
                 <a href="{% url 'add_to_cart' product.id %}" class="btn btn-primary">Add to Cart</a>
             </div>
