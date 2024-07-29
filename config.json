@@ -1,7 +1,11 @@
 {
 	"SECRET_KEY": "django-insecure-l+%m3jn6$-tcj1irf(lp*^d=23n!be#qe+d7ar%ygq2+jxn%64",
 	"DEBUG": false,
-	"allowed_hosts": ["https://8000-muzaffarahm-finalecomme-0vbktgr33i6.ws.codeinstitute-ide.net",
-					"http://127.0.0.1:8000/", "http://locahost:8080"],
-    "DATABASE": "postgres://magyattd:WEUqPqAASGgEEdzNn6MYi-1xEm3b-gVW@abul.db.elephantsql.com/magyattd"
+	"allowed_hosts": ["*"],
+    "DATABASE": "postgres://magyattd:WEUqPqAASGgEEdzNn6MYi-1xEm3b-gVW@abul.db.elephantsql.com/magyattd",
+	"STRIPE_SECRET_KEY": "sk_test_51PG3XeEFP8WxWAAHztB4r0ERiRAJjqHS7vjb2Q0xHwSQTBi1FNrrhArW3JuHdp0fVf48vQuX5VVNJoIf3CUmPQOR00OrHPFWRf",
+	"STRIPE_PUBLISHABLE_KEY": "pk_test_51PG3XeEFP8WxWAAHk1Ln1cwqnWTdQmGqUAInKu2Xfk4YbBK9puyEYvNsXNffHUpYT2HwRHBXr8yiXJgaB0HVlXIz00ZrSZVmhf",
+	"AWS_SECRET_ACCESS_KEY": "qWCrZcskcraRdg5+itDtsBLT61Aj/kaI2U+pju8tc2U",
+	"AWS_ACCESS_KEY_ID": "DO00E6ZVDQ6WGHKEUZR2"
+
 }
