@@ -9,12 +9,12 @@ CONFIG = json.loads(open(str(BASE_DIR) + "/config.json", "r").read())
 
 SECRET_KEY = CONFIG["SECRET_KEY"]
 
-STRIPE_SECRET_KEY = 'sk_test_51PG3XeEFP8WxWAAHztB4r0ERiRAJjqHS7vjb2Q0xHwSQTBi1FNrrhArW3JuHdp0fVf48vQuX5VVNJoIf3CUmPQOR00OrHPFWRf'
-STRIPE_PUBLISHABLE_KEY = 'pk_test_51PG3XeEFP8WxWAAHk1Ln1cwqnWTdQmGqUAInKu2Xfk4YbBK9puyEYvNsXNffHUpYT2HwRHBXr8yiXJgaB0HVlXIz00ZrSZVmhf'
+STRIPE_SECRET_KEY = CONFIG['STRIPE_SECRET_KEY']
+STRIPE_PUBLISHABLE_KEY = CONFIG['STRIPE_PUBLISHABLE_KEY']
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*']  # Allows all hosts for development purposes
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -23,8 +23,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sitemaps',
     'corsheaders',
+    'storages',
     'cart',
     'products',
     'mainapp',
@@ -96,12 +96,23 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
+AWS_ACCESS_KEY_ID = CONFIG["AWS_ACCESS_KEY_ID"]
+AWS_SECRET_ACCESS_KEY = CONFIG["AWS_SECRET_ACCESS_KEY"]
+AWS_STORAGE_BUCKET_NAME = 'ishoppc'
+AWS_S3_ENDPOINT_URL = 'https://ishoppc.sgp1.digitaloceanspaces.com'
+AWS_DEFAULT_ACL = 'public-read'
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+    'ACL': 'public-read',
+}
+MEDIA_FILES_LOCATION = 'media'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+
 STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_URL = '/media/'
+MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
