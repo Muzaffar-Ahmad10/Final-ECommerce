@@ -87,11 +87,20 @@ def inventory(request):
 def edit_product(request, product_id):
     product = get_object_or_404(Product, id=product_id)
     ProductImageFormSet = modelformset_factory(ProductImage, form=ProductImageForm, extra=1, can_delete=True)
+    
     if request.method == 'POST':
         product_form = ProductForm(request.POST, instance=product)
         formset = ProductImageFormSet(request.POST, request.FILES, queryset=product.images.all())
+        
         if product_form.is_valid() and formset.is_valid():
-            product_form.save()
+            product = product_form.save()
+            
+            for form in formset:
+                if form.cleaned_data and not form.cleaned_data.get('DELETE', False):
+                    product_image = form.save(commit=False)
+                    product_image.product = product
+                    product_image.save()
+            
             formset.save()
             messages.success(request, f"Changes saved for {product.name}.")
             return redirect('inventory')
@@ -107,6 +116,7 @@ def edit_product(request, product_id):
         'product': product,
     }
     return render(request, 'mainapp/inventory.html', context)
+
 
 
 @superuser_required
