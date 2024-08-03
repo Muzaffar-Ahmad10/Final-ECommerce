@@ -134,6 +134,7 @@ Fonts
 - Heroku Platform
 - jQuery
 - Postgres
+- DigitalOcean®
 
 
 ## Validation:
