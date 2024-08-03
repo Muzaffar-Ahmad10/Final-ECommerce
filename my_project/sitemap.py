@@ -2,6 +2,7 @@ from django.contrib.sitemaps import Sitemap
 from mainapp.models import Post
 from products.models import Product
 
+
 class PostSitemap(Sitemap):
     changefreq = "weekly"
     priority = 0.8
@@ -11,6 +12,7 @@ class PostSitemap(Sitemap):
 
     def lastmod(self, obj):
         return obj.created_on
+
 
 class ProductSitemap(Sitemap):
     changefreq = "daily"

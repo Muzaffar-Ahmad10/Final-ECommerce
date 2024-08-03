@@ -2,6 +2,7 @@ from django import forms
 from products.models import Product, ProductImage
 from .models import Post
 
+
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
@@ -13,6 +14,7 @@ class ProductForm(forms.ModelForm):
             'stock': forms.NumberInput(attrs={'class': 'form-control'}),
         }
 
+
 class ProductImageForm(forms.ModelForm):
     class Meta:
         model = ProductImage
@@ -21,6 +23,7 @@ class ProductImageForm(forms.ModelForm):
             'image': forms.ClearableFileInput(attrs={'class': 'form-control'}),
             'alt_text': forms.TextInput(attrs={'class': 'form-control'}),
         }
+
 
 class PostForm(forms.ModelForm):
     class Meta:

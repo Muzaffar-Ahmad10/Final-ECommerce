@@ -22,4 +22,3 @@ urlpatterns = [
     path('cart/', include('cart.urls'), name='cart'),
     path('admin/', admin.site.urls),
 ]
- 

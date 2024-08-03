@@ -8,6 +8,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
 
+
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -18,7 +19,8 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('post_detail', args=[str(self.slug)])
-    
+
+
 class Transaction(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     total_bill = models.DecimalField(max_digits=10, decimal_places=2)
@@ -36,7 +38,8 @@ class TransactionProduct(models.Model):
 
     def __str__(self):
         return f'Transaction #{self.transaction.id} - Sold Product: {self.sold_product.product.name}, Quantity: {self.sold_product.quantity}'
-    
+
+
 class ContactUs(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()

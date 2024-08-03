@@ -168,34 +168,40 @@ Fonts
  #### PEP8 Validation:
  - CI Python Linter was used to check the code for PEP8 requirements.
  
- - Manage.py has no errors
- <details><summary>manage.py file</summary>  
-
-![Epics](images/manage.py.jpeg)
-</details>
-
-- Admin.py has no errors
- <details><summary>Admin.py file</summary>  
-
-![Epics](images/Admin.py%20.jpeg)
-</details>
-
-- Urls.py has no errors
+ - My project (urls.py) has no error.
  <details><summary>urls.py file</summary>  
 
-![Epics](images/urls.py%20.jpeg)
+![Epics](images/myproject,%20urls.py.jpeg)
 </details>
 
-- Forms.py has no errors
- <details><summary>Forms.py file</summary>  
+- My project (sitemap.py) has no error.
+ <details><summary>sitemap.py file</summary>  
 
-![Epics](images/forms.py%20.jpeg)
+![Epics](images/myproject,sitemape.py.jpeg)
 </details>
 
-- Decorators.py has no errors
- <details><summary>Decorators.py file</summary>  
+- products (models.py ) has no error
+ <details><summary>urls.py file</summary>  
 
-![Epics](images/decorators.py%20.jpeg)
+![Epics](images/products,%20Model.py.jpeg)
+</details>
+
+- Mainapp admin.py has no error
+ <details><summary>admin.py </summary>  
+
+![Epics](images/mainapp.%20admin.py.jpeg)
+</details>
+
+- mainapp, Form.py has no errors
+ <details><summary>form.py</summary>  
+
+![Epics](images/mainapp,%20Form.py.jpeg)
+</details>
+
+- mainapp, models.py has no errors
+ <details><summary>models.py</summary>  
+
+![Epics](images/mainapp,%20models.py.jpeg)
 </details>
 
 #### Lighthouse:
