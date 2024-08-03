@@ -150,14 +150,14 @@ Fonts
 - Dashboard.css has no errors
 - BootStrape.css has no errors
 
-<details><summary>CSS validation done image</summary>  
+<details><summary>CSS bootstrap validation done </summary>  
 
-![Epics](images/css%20validation%20.jpeg)
+![Epics](images/bootstarp.main,%20css.jpeg)
 </details>
 
-<details><summary>bootstrape CSS validation done image</summary>  
+<details><summary>dashbord CSS validation done</summary>  
 
-![Epics](images/bootstrape%20css.jpeg)
+![Epics](images/dashbord.css.jpeg)
 </details>
 
 #### JavaScript Validation:
