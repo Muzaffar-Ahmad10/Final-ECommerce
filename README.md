@@ -281,7 +281,6 @@ Fonts
 | **Bug** | 
 | ------- | 
 | Web Page search option is not working properly | 
-| Product pictures are not shown when we deploy this webpage on heroku.  | 
 | All the code is working properly, but all the code do not go through from the validators. | 
 
 
