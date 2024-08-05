@@ -85,6 +85,14 @@ Fonts
 - In addition, the footer section encompasses all pertinent social media links associated with the business. This allows users to easily access and 
   follow the business on various social media platforms, thereby increasing the number of followers, likes, and shares. The footer also includes an email sign-up form, useful links, and contact information.
 
+### Wireframes
+I used Balsamiq to create wireframes for my project. It's a user-friendly wireframing tool that enables me to quickly and easily create mockups for my website or application. It offers a wide range of pre-built UI elements, and allows for easy collaboration with my team. I have a image of my wireframes, which you can access it and check it out the design.
+
+<details><summary>Wireframe </summary>  
+
+![Epics](images/wireframe.jpeg)
+</details>
+
 ### Website pages
 
  #### The site consists of the following pages:
