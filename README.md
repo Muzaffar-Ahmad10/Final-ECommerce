@@ -204,15 +204,6 @@ Fonts
 ![Epics](images/mainapp,%20models.py.jpeg)
 </details>
 
-#### Lighthouse:
-- Performance, best practices and SEO was tested using Lighthouse.
-
-#### Testing: 
-
-- Manual testing User Stories
-- Automated testing
-
-
 
 ## Features:
 
@@ -251,6 +242,12 @@ Fonts
 
 - Allows the user to cancel their bookings.
 
+#### Stripe
+- Allows the user to use stripe for card payments.
+
+#### Basket
+- Allows the user to view the basket with their items.
+
 #### clear Cart
 - cancel the cart products
 
@@ -275,6 +272,36 @@ Fonts
 
 - Links are used for the Facebook business page and Instagram page.
 - All links open in a new tab to ensure the user is not directed away from the business.
+
+## Lighthouse:
+- Performance, best practices and SEO was tested using Lighthouse.
+
+## Testing: 
+
+#### Manual testing User Stories
+- As a Site User i can register for an account so that i can have an account and view my profile.
+- As a Site User i can login and logout so that i can have an account with my information stored for fast usage
+- As a Site User i can have a profile.
+- As a Site User i can navigate across the site so that i can access all parts of the site.
+- As a Site User i can change my password so that i can set a new password.
+- As a Site User i can use a navbar, footer, and social icons so that i navigate the site,
+- As a Site User i can be notified of my actions so that i can be aware the action was completed successfully or not.
+- As a Site User i can see my login status so that i can know if i am logged in or not
+- As a Site User i can visit the shop so that i can view all products available.
+- As a Site User i can view a list of products so that i can select a product to purchase.
+- As a Site User i can use a card as the payment method so that i can complete my purchase
+- As a Site Owner / Admin i can add a product so that i can add new products to the shop
+- As a Site Owner / Admin i can edit a product so that i can edit existing products in the shop
+- As a Site Owner / Admin i can delete a product so that i can delete existing products from the shop
+- As a Site Owner / Admin i can add products details and remove extra information.
+
+#### Device Testing & Browser compatibility
+- The site uses to test on various real world devices 
+- Apple 
+- Samsung
+- Mozilla Firefox
+- Google Chrome
+- Microsift edge
 
 ## Bugs
 
