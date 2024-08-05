@@ -66,6 +66,20 @@
 - Competitive prices: Users will expect the prices for products to be competitive with other options available on the market.
 - Good customer service: Users will expect the app to have good customer service, including responsive and helpful support in the event of any issues or questions.
 
+## User Stories
+- Signup for an account
+- login and logout
+- Change Password
+- I have an account 
+- View all products available
+- select a product to purchase
+ 
+ Admin and Shope Management
+ - Add new products to the shop
+ - Edit existing products in the shop
+ - delete existing products from the shop
+
+
 ### Kanban, Epics & User Stories
 - GitHub Kanban was used to track all open user stories
 - Epics were created using the milestones feature
