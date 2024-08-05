@@ -314,6 +314,27 @@ Fonts
 
 ## Deployment:
 
+
+#### DigitalOcean
+To set up an S3 bucket:
+
+1. Sign in to the digitalocean site.
+2. Choose a datacenter region.
+3. Select the restrict file listing.
+4. Choose a unique name for your bucket.
+5. Select a project to add the bucket 
+6. After selaction your settings, click Create a Spaces Bucket. This takes you to the newly-created bucket’s Files tab, which displays the files and folders in its root. 
+
+#### Stripe Endpoint
+
+- Register for a Stripe account at stripe.com
+- Log into your Stripe account and navigate to the Developers section
+- In the Developers section, locate the API keys section and take note of the publishable and secret keys
+- Create a webhook with the URL of your website
+- Select the events you want to receive.
+- Create an environment variable
+- Test the webhook to ensure it is working properly and resolve any problem that may arise.
+
 #### Heroku
 
 - This application has been deployed from Github using Heroku. Here's how:
@@ -371,5 +392,3 @@ You can clone the repository by following these steps:
 - Code Institute Slack Community
 - Code Institute Tutor Support
 - My Friend who support me during my project. 
-
-# chacking new gitpod seeting
