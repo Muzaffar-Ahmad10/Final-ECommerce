@@ -19,8 +19,10 @@
 12. Technologies Used
 13. Libraries & Tools
 14. Validation
-15. Features
-16. Deployment
+15. Testing
+16. Bugs
+17. Features
+18. Deployment
 
 ## Business Plan:
 - Its online shope, We are your one-stop shop for all computer-related products, offering a wide range of products from top brands to meet all your computing needs. 
@@ -330,6 +332,7 @@ I used Balsamiq to create wireframes for my project. It's a user-friendly wirefr
 | **Bug** | 
 | ------- | 
 | Web Page search option is not working properly | 
+| News and post area has an update error  |
 | All the code is working properly, but all the code do not go through from the validators. | 
 
 
