@@ -229,6 +229,8 @@ I used Balsamiq to create wireframes for my project. It's a user-friendly wirefr
 </details>
 
 
+## Debug = False:
+
 ## Features:
 
 #### Search Engine Optimisation (SEO)
