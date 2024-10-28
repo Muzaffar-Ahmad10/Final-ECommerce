@@ -21,6 +21,7 @@ urlpatterns = [
     path('post-list/', post_list, name='post_list'),
     path('post/<slug:slug>/', post_detail, name='post_detail'),
     path('add-posts/', add_posts, name='add_posts'),
+    path('subscriptions/', subscriptions, name="subscriptions"),
     path('delete-post/<int:post_id>/', delete_post, name='delete_post'),
 
 ]

@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
-from .models import Transaction, ContactUs, Post
+from .models import Transaction, ContactUs, Post, Subscription
 from products.models import Product, ProductImage
 import stripe
 from django.conf import settings
@@ -32,6 +32,17 @@ def index(request):
                 messages.success(request, 'Your message has been sent successfully. We will get back to you soon.')
             else:
                 messages.error(request, "Name or Email missing!")
+        if 'subscription-form' in request.POST:
+            email = request.POST.get('subscription-email')
+            if not email:
+                messages.error(request, 'Please provide an email for subscription!')
+            else:
+                try:
+                    Subscription.objects.create(email=email)
+                    messages.success(request, 'Your subscription is successfully done!')
+                except IntegrityError:
+                    messages.error(request, 'This email is already subscribed!')
+            
     messages.success(request, 'Welcome to our IshopPC!')
     context = {
         'products': products,
@@ -205,3 +216,12 @@ def delete_post(request, post_id):
 
 def custom_page_not_found_view(request, exception):
     return render(request, 'mainapp/404.html', status=404)
+
+@superuser_required
+@csrf_exempt
+def subscriptions(request):
+    subscription = Subscription.objects.all().order_by('-id')
+    context = {
+        'subscription': subscription
+    }
+    return render(request, 'mainapp/subscription.html', context)
