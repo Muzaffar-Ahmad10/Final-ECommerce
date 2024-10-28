@@ -159,6 +159,7 @@ I used Balsamiq to create wireframes for my project. It's a user-friendly wirefr
 - jQuery
 - Postgres
 - DigitalOcean®
+- SendGrid
 
 
 ## Validation:
@@ -229,7 +230,6 @@ I used Balsamiq to create wireframes for my project. It's a user-friendly wirefr
 </details>
 
 
-## Debug = False:
 
 ## Features:
 
@@ -298,6 +298,12 @@ I used Balsamiq to create wireframes for my project. It's a user-friendly wirefr
 
 - Links are used for the Facebook business page and Instagram page.
 - All links open in a new tab to ensure the user is not directed away from the business.
+
+#### Newsletter
+
+- Promote special offers, sales, or upcoming events.
+- Highlight new products or services to drive sales and engagement.
+- save emails
 
 ## Lighthouse:
 - Performance, best practices and SEO was tested using Lighthouse.
