@@ -12,7 +12,7 @@ SECRET_KEY = CONFIG["SECRET_KEY"]
 STRIPE_SECRET_KEY = CONFIG['STRIPE_SECRET_KEY']
 STRIPE_PUBLISHABLE_KEY = CONFIG['STRIPE_PUBLISHABLE_KEY']
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']  # Allows all hosts for development purposes
 
@@ -71,7 +71,7 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-muzaffarahm-finalecomme-3hax6bdglm6.ws-eu114.gitpod.io',
+    'https://8000-muzaffarahm-finalecomme-fvddq7jet0p.ws.codeinstitute-ide.net',
     'https://*.gitpod.io',  # This allows all subdomains of gitpod.io
     'https://*.herokuapp.com'
 ]
