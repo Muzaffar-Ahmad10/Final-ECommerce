@@ -154,6 +154,25 @@
     {% block content %}
         
     {% endblock content %}
+
+    
+    <hr>
+    <div class="d-flex">
+      <div class="col-sm-8">
+        <h3 class="ml-4">Want to get the latest news from us?</h3>
+      </div>
+      <div class="col-sm-4 d-flex mr-4" style="margin-right: 30%;">
+        <form method="post" class="d-flex w-100">
+          {% csrf_token %}
+          <input type="hidden" name="subscription-form" value="subscription-form" />
+          <input type="text" class="form-control me-2" name="subscription-email" id="subscription-email" placeholder="Enter your email">
+          <button type="submit" class="btn btn-primary btn-sm ml-2">Subscribe</button>
+        </form>
+        <p></p>
+      </div>
+    </div>
+    <hr>
+
   <footer class="footer-background py-5">
     <div class="container">
       <div class="row">
