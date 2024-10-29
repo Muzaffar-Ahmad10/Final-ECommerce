@@ -47,17 +47,22 @@
 - To explore and buy a diverse selection of computer-related products from the online store.
 - To easily reach the main page for making purchases.
 - To get in touch with the ishopPc team for any questions or assistance through the contact page.
+- To allows our businesses to accept payments via credit cards, and debit cards.
+- To create account and buy our Products.
+- To read News & posts. 
 
 ### Site Owner Goals
 - Drive sales by offering products for purchase on the ecommerce store
 - Cultivate a dedicated customer following through a user-friendly interface and top-notch merchandise
 - Position ishopPc as a reputable and esteemed name in the digital retail sector
 - Attain financial success and ensure ongoing expansion.
-
+- Newsletter subscriptions help maintain ongoing relationships with our audience, its allow us to communicate directly with our audience, keeping them informed about updates, promotions, or important news.
+- News & post provide a platform to share important updates, events, or changes related to a business, The page can educate our audience about products. 
 ### User Experience
 
 - Those seeking information and resources regarding computer products,
 - Any person interested in buying PC-related products from the app's online store.
+- Accept payments via credit cards.
 
 ### User Requirements and Expectations
 - A user-friendly interface: Users will expect the app to be easy to navigate and use, with clear and concise instructions for purchasing products.
@@ -67,7 +72,7 @@
 - Accurate and up-to-date information: Users will expect the app to provide accurate and up-to-date information about the products.
 - Competitive prices: Users will expect the prices for products to be competitive with other options available on the market.
 - Good customer service: Users will expect the app to have good customer service, including responsive and helpful support in the event of any issues or questions.
-
+- A user can buy products: that provides a suite of payment processing tools for online shoping.
 ## User Stories
 - Signup for an account
 - login and logout
@@ -75,11 +80,16 @@
 - I have an account 
 - View all products available
 - select a product to purchase
+- simplify online payment processing
+- Read news & posts.
+
  
  Admin and Shope Management
  - Add new products to the shop
  - Edit existing products in the shop
  - delete existing products from the shop
+ - Newsletter subscriptions help maintain ongoing relationships with customers.
+ - News & posts pages serves.
 
 
 ### Kanban, Epics & User Stories
@@ -119,6 +129,7 @@ I used Balsamiq to create wireframes for my project. It's a user-friendly wirefr
 - Edit Booking
 - Cancel Booking
 - Product List
+- News & Post
 - Cart
 - Checkout
 - Checkout Success
@@ -158,6 +169,7 @@ I used Balsamiq to create wireframes for my project. It's a user-friendly wirefr
 - Heroku Platform
 - jQuery
 - Postgres
+- Stripe
 - DigitalOcean®
 - SendGrid
 
@@ -294,6 +306,12 @@ I used Balsamiq to create wireframes for my project. It's a user-friendly wirefr
 - A contact page with all contact details listed
 - Users can send a message via the message form
 
+#### News & Post
+
+- News & posts can engage your audience, fostering a sense of connection and community.
+- it provide a platform to share important updates.
+- Consistently posting valuable information can establish you as a thought leader in your field.
+
 #### Social Media Links
 
 - Links are used for the Facebook business page and Instagram page.
@@ -301,9 +319,8 @@ I used Balsamiq to create wireframes for my project. It's a user-friendly wirefr
 
 #### Newsletter
 
-- Promote special offers, sales, or upcoming events.
-- Highlight new products or services to drive sales and engagement.
-- save emails
+- Newsletter subscriptions help to maintain personal relationships with customers.
+- This allow us to communicate directly with our customers, keeping them informed about updates and promotions.
 
 ## Lighthouse:
 - Performance, best practices and SEO was tested using Lighthouse.
@@ -326,6 +343,8 @@ I used Balsamiq to create wireframes for my project. It's a user-friendly wirefr
 - As a Site Owner / Admin i can edit a product so that i can edit existing products in the shop
 - As a Site Owner / Admin i can delete a product so that i can delete existing products from the shop
 - As a Site Owner / Admin i can add products details and remove extra information.
+- As a Site Owner / Admin i can save subscribers e-mail for personal contect.
+- As a Site Owner / Admin i can provide a platform to share important updates. 
 
 #### Device Testing & Browser compatibility
 - The site uses to test on various real world devices 
@@ -340,7 +359,6 @@ I used Balsamiq to create wireframes for my project. It's a user-friendly wirefr
 | **Bug** | 
 | ------- | 
 | Web Page search option is not working properly | 
-| News and post area has an update error  |
 | All the code is working properly, but all the code do not go through from the validators. | 
 
 
