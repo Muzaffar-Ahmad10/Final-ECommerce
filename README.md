@@ -56,13 +56,15 @@
 - Cultivate a dedicated customer following through a user-friendly interface and top-notch merchandise
 - Position ishopPc as a reputable and esteemed name in the digital retail sector
 - Attain financial success and ensure ongoing expansion.
-- Newsletter subscriptions help maintain ongoing relationships with our audience, its allow us to communicate directly with our audience, keeping them informed about updates, promotions, or important news.
+- Newsletter subscriptions help maintain relationships with our customers, its allow us to communicate directly, keeping them informed about updates, promotions, or important news.
 - News & post provide a platform to share important updates, events, or changes related to a business, The page can educate our audience about products. 
 ### User Experience
 
 - Those seeking information and resources regarding computer products,
 - Any person interested in buying PC-related products from the app's online store.
 - Accept payments via credit cards.
+- Create account as a customer.
+- Subscribe as s customer.
 
 ### User Requirements and Expectations
 - A user-friendly interface: Users will expect the app to be easy to navigate and use, with clear and concise instructions for purchasing products.
@@ -73,6 +75,7 @@
 - Competitive prices: Users will expect the prices for products to be competitive with other options available on the market.
 - Good customer service: Users will expect the app to have good customer service, including responsive and helpful support in the event of any issues or questions.
 - A user can buy products: that provides a suite of payment processing tools for online shoping.
+- A user can read updates about the products.
 ## User Stories
 - Signup for an account
 - login and logout
